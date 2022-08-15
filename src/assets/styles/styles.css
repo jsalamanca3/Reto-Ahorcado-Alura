@@ -87,7 +87,7 @@ p {
     width: 100%;
     height: auto;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .main-exchange--index {
     width: 100%;
@@ -146,6 +146,12 @@ p {
     border: 1.5px solid;
     border-radius: 20px;
     color: #0A3871;
+}
+button :hover {
+    color: orangered;
+}
+button:active {
+    border-color: green;
 }
 .buttonbotton--guardar {
     width: 10px;
@@ -223,17 +229,18 @@ footer {
     justify-content: center;
     width: 30px;
     margin-right: 6px;
-    font-size: 2.5em;
+    font-size: 3rem;
     text-align: center;
     border-bottom: 2px solid #0a3871;
+    color: #0A3871;
 }
 #result {
     position: relative;
     text-align: center;
     width: 100%;
-    height: 15x;
+    height: auto;
     padding: 5px;
-    top: 25px;
+    top: 48px;
     font-size: 3.5rem;
     color: #0a3871;
 }
@@ -244,11 +251,20 @@ footer {
     margin-top: 55px;
     gap: 9px;
 }
-#letters button{
+#letters button {
     width: 28px;
     padding: 6px 0;
     text-align: center;
     font-size: 2rem;
+    border-radius: 5px;
+    color: #0A3871;
+    background: #E5E5E5;
+    cursor: pointer;
+}
+#letters button:hover {
+    color: orangered;
+    font-size: 2.1rem;
+    font-weight: bold;
 }
 .container-button--startend {
     display: flex;
@@ -290,6 +306,19 @@ footer {
     color: #0A3871;
     font-size: 2rem;
 }
+#start-game{
+    cursor: pointer;
+    animation: beat 3s infinite;
+}
+
 #end-game {
     color: #0A3871;
+}
+
+#end-game:hover {
+    color: orangered;
+}
+
+@keyframes beat{
+	to { transform: scale(1.1); }
 }
