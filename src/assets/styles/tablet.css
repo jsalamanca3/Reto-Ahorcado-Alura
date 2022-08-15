@@ -17,3 +17,47 @@
     padding-bottom: 35px;
     text-align: center;
 }
+.main-image--change {
+    max-height: 310px;
+    margin-top: 2%;
+    position: relative;
+    padding: 3px;
+    left: calc(50% - 118px);
+}
+.container-button--startend {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-evenly;
+}
+.main-container--start {
+    position: inherit;
+    justify-content: center;
+    display: block;
+    width: 229px;
+    height: 60px;
+    margin-top: 0px;
+    padding: 5px;
+}
+.container-letters {
+    margin: -5px 60px;
+    margin-top: 30px;
+    gap: 6px;
+}
+.main-container--end {
+    position: inherit;
+    justify-content: center;
+    display: block;
+    margin-top: 0px;
+    padding: 5px;
+    width: 229px;
+    height: 60px;
+}
+#result {
+    top: 30px;
+}
+#letters button{
+    width: 45px;
+    max-width: 70px;
+    padding: 6px 0;
+    text-align: center;
+}

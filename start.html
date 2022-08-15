@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="src/assets/styles/styles.css">
+    <link href="src/assets/styles/tablet.css" rel="stylesheet" media="screen and (min-width: 768px)">
+    <script src="src/assets/iniciar jugar/function.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/assets/styles/styles.css">
-    <link rel="stylesheet" href="src/assets/styles/stylesStart.css" />
-    <script src="src/assets/iniciar jugar/function.js"></script>
     <title>Ahorcado</title>
 </head>
 
@@ -22,7 +22,6 @@
         <img class="main-image--change" id="image" src="src/imagenes/ahorcado/img0.png" alt="Ahorcado" />
         <div class="container-word--guess">
             <p id="word-guess"></p>
-            <button class="main-container--button buttontop" id="start-game">Palabra aleatoria</button>
             <p id="result"> </p>
             <div class="container-letters" id="letters">
                 <button>a</button>
@@ -53,7 +52,10 @@
                 <button>y</button>
                 <button>z</button>
             </div>
-            <button style="top: -15px;" class="buttonbotton"><a class="boton-b" id="end-game" href="index.html">Salir</a></button>
+            <div class="container-button--startend">
+                <button class="main-container--start" id="start-game">Palabra aleatoria</button>
+                <button class="main-container--end"><a id="end-game" href="index.html">Salir</a></button>
+            </div>
         </div>
     </main>
     <footer>
