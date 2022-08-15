@@ -1,0 +1,51 @@
+/* .main-start-game {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,.7);
+    display: flex;
+    gap: 30px;
+} para los media query*/
+
+.main-image--change {
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+    left: 20%;
+    padding: 5px;
+}
+#word-guess{
+    height: 3em;
+}
+#word-guess span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30px;
+    margin-right: 6px;
+    margin-top: 40px;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #0a3871;
+}
+.container-word--guess {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+}
+.container-letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 9px;
+}
+#letters button{
+    width: 28px;
+    padding: 6px 0;
+    text-align: center;
+}
