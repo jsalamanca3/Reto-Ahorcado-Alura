@@ -1,20 +1,26 @@
-let palabrita;
-let cant_errores = 0; //cuantas veces me equivoqué
-let cant_aciertos = 0; //cuantas letras acerté
+const accion = id("start-game");
+const imagen = id("image");
+const accion_letters = document.querySelectorAll("#letters button");
 
 const palabras = [
-    'manzanas',
-    'camiseta',
-    'caramelos',
+    'pera',
+    'saco',
+    'automovil',
+    'ausente',
+    'dulce',
     'televisor',
     'gato',
     'computador',
     'css',
-    'microfono'
+    'microfono',
+    'arbol',
+    'repositorio',
 ];
-const accion = id("start-game");
-const imagen = id("image");
-const accion_letters = document.querySelectorAll("#letters button");
+
+
+let palabrita;
+let cant_errores = 0; //cuantas veces me equivoqué
+let cant_aciertos = 0; //cuantas letras acerté
 
 /* click en iniciar juego */
 accion.addEventListener("click", start);
@@ -82,9 +88,6 @@ function click_letters(event) {
         id("result").innerHTML = "GANASTE!! WIIIIII";
         game_over();
     }
-    console.log(
-        "la letra " + letter + " en la palabra " + palabra + " ¿existe?: " + acerto
-    );
 }
 
 /* fin del juego */
