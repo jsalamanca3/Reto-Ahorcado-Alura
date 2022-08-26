@@ -2,27 +2,13 @@ const accion = id("start-game");
 const imagen = id("image");
 const accion_letters = document.querySelectorAll("#letters button");
 
-const palabras = [
-    'pera',
-    'saco',
-    'automovil',
-    'ausente',
-    'dulce',
-    'televisor',
-    'gato',
-    'computador',
-    'css',
-    'microfono',
-    'arbol',
-    'repositorio',
-];
-
-
 let palabrita;
 let cant_errores = 0; //cuantas veces me equivoqué
 let cant_aciertos = 0; //cuantas letras acerté
 
-/* click en iniciar juego */
+let inputAnhadidos = new Array; //Añadido ---
+
+/* click para iniciar juego */
 accion.addEventListener("click", start);
 
 function start(event) {
@@ -30,6 +16,7 @@ function start(event) {
     accion.disabled = true;
     cant_errores = 0;
     cant_aciertos = 0;
+    inputAnhadidos = []; //añadido ---
 
     const parrafo = id("word-guess");
     parrafo.innerHTML = "";
@@ -61,8 +48,8 @@ function click_letters(event) {
     const button = event.target; //cuál de todas las letras, llamó a la función.
     button.disabled = true;
 
-    const letter = button.innerHTML.toLowerCase( );
-    const palabra = palabrita.toLowerCase( ); //.toLowerCase( ); para letras minúsculas // .toUpperCase( ) para letras mayúsculas
+    const letter = button.innerHTML.toUpperCase( );
+    const palabra = palabrita.toUpperCase( ); //.toLowerCase( ); para letras minúsculas // .toUpperCase( ) para letras mayúsculas
 
     let acerto = false;
     for (let i = 0; i < palabra.length; i++) {
@@ -85,7 +72,7 @@ function click_letters(event) {
         id("result").innerHTML = "Perdiste, la palabra era " + palabrita;
         game_over();
     } else if (cant_aciertos == palabrita.length) {
-        id("result").innerHTML = "GANASTE!! WIIIIII";
+        id("result").innerHTML = "Enorabuena ¡has Ganado!";
         game_over();
     }
 }

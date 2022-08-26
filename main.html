@@ -18,28 +18,31 @@
 <body>
     <header>
         <img class="header_logo_img" src="src/imagenes/Logo.png" alt="Logo Alura">
+        <ul class="ul-palabra-anhadidas">
+            <li class=".li-palabras-anhadidas"></li>
+        </ul>
     </header>
-    <main>
+    <main id="#imprimir">
         <section class="main-testarea">
             <div class="main-testarea--button">
-                <textarea placeholder="Ingrese el texto aquí" wrap="soft" id="textField"></textarea>
+                <textarea placeholder="Ingrese el texto aquí" wrap="soft" type="text" id="textField"></textarea>
             </div>
         </section>
         <section class="main-exchange--main">
             <!-- <div class="main-container"> -->
-            <div class="main-container--guardar">
-                <button class="buttontop" id="buttonSave" onclick="buttonEvent(copyArray)"><a class="boton-a" href="#">Guardar y empezar</a></button>
+            <div class="main-container--guardar" id="containerSave">
+                <button type="submit" class="buttontop" id="buttonSave"><a class="boton-a" href="#">Guardar</a></button>
             </div>
             <div class="main-container--cancelar">
-                <button class="buttonbotton">
-                    <a class="boton-b" href="index.html">Cancelar</a></button>
+                <button class="buttonbotton" id="buttonGame">
+                    <a class="boton-b" href="start.html">Ir al Juego</a></button>
             </div>
             <!-- </div> -->
         </section>
         <section class="main-span">
             <div class="main-span-vector">
                 <p class="main-vector"><span><img class="main-vector-icono" src="src/imagenes/Vector.svg"
-                            alt="Imagen de interrogante"></span>Máx. de 8 letras</p>
+                            alt="Imagen de interrogante"></span>Máx. 8 letras</p>
             </div>
         </section>
     </main>
@@ -51,7 +54,9 @@
             </ul>
         </section>
     </footer>
-    <style src="src/assets/buttonEvent.js"></style>
+    <script src="src/assets/buttonEvent.js"></script>
+    <script src="src/assets/iniciar jugar/index.js"></script>
+    <style src="src/assets/iniciar jugar/game.js"></style>
 </body>
 
 </html>

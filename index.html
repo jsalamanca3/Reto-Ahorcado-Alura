@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/styles/styles.css">
+    <link rel="stylesheet" href="src/assets/styles/loader.css">
     <link href="src/assets/styles/tablet.css" rel="stylesheet" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="src/assets/styles/computer.css" media="screen and (min-width: 1280px)">
     <link rel="stylesheet" href="src/assets/styles/screem1600.css" media="screen and (min-width: 1600px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Ahorcado</title>
 </head>
 
-<body>
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
     <header>
         <img class="header-logo--img" src="src/imagenes/Logo.png" alt="Logo Alura">
     </header>
@@ -37,7 +43,8 @@
             </ul>
         </section>
     </footer>
-    <style></style>
+    <script src="src/assets/jquery.js"></script>
+    <script src="src/assets/load function.js"></script>
 </body>
 
 </html>

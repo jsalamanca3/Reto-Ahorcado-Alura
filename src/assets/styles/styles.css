@@ -18,6 +18,10 @@ header {
     top: 24px;
     left: -10px;
 }
+.li-palabras-anhadidas{
+    margin-left: 1em;
+    display: none;
+}
 main {
 	width: 100%;
 	height: auto;
