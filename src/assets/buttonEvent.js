@@ -1,6 +1,6 @@
 const inputAnhadirPalabra = document.getElementById("buttonSave");
 const anhadirPalabra = document.getElementById("textField");
-/* const inputResetPalabra = getid("buttonreset"); */
+const inputResetPalabra = getid("buttonreset");
 
 let hayCoincidencia = false;
 
@@ -17,12 +17,12 @@ inputAnhadirPalabra.addEventListener('click', function(){
     anhadirPalabra.value="";
 });
 
-/* //Funcion para borrar las palabras almacenadas
+//Funcion para borrar las palabras almacenadas
 inputResetPalabra.addEventListener('click', function(){
     localStorage.clear("palabrasAdicionales");
     alert("Las siguientes palabras fueron eliminadas:" + " " + palabrasAdicionales);
     location.reload();
-}); */
+});
 
 
 function ingresarPalabra(valor){

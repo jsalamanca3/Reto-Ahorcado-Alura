@@ -1,13 +1,8 @@
-.main-exchange--index {
-    padding-top: 8%;
-    padding-bottom: 28.5%;
-}
 .main-exchange--main {
     padding-top: 8%;
     padding-bottom: 2%;
 }
 textarea {
-    height: 100vh;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 2.5rem;
 }
