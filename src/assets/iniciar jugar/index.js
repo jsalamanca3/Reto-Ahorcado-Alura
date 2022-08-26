@@ -2,18 +2,18 @@ const palabrasAnhadidas = document.querySelectorAll(".li-palabras-anhadidas");
 const palabrasContainer = document.querySelector(".ul-palabras-anhadidas");
 
 let palabras = [
-    'pera',
-    'saco',
-    'automovil',
-    'ausente',
-    'dulce',
-    'televisor',
-    'gato',
-    'computador',
-    'css',
-    'microfono',
-    'arbol',
-    'repositorio',
+    "pera",
+    "saco",
+    "automovil",
+    "ausente",
+    "dulce",
+    "televisor",
+    "gato",
+    "computador",
+    "css",
+    "microfono",
+    "arbol",
+    "repositorio"
 ];
 let palabrasAdicionales = [];
 

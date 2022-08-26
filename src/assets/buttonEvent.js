@@ -1,7 +1,6 @@
-
-/* const inputResetPalabra = getid("buttonreset"); */
 const inputAnhadirPalabra = document.getElementById("buttonSave");
 const anhadirPalabra = document.getElementById("textField");
+/* const inputResetPalabra = getid("buttonreset"); */
 
 let hayCoincidencia = false;
 
@@ -18,11 +17,12 @@ inputAnhadirPalabra.addEventListener('click', function(){
     anhadirPalabra.value="";
 });
 
-/* inputResetPalabra.addEventListener('click', function(){
+/* //Funcion para borrar las palabras almacenadas
+inputResetPalabra.addEventListener('click', function(){
     localStorage.clear("palabrasAdicionales");
     alert("Las siguientes palabras fueron eliminadas:" + " " + palabrasAdicionales);
     location.reload();
-}); para borrar palabras en el array*/
+}); */
 
 
 function ingresarPalabra(valor){
@@ -60,7 +60,7 @@ function verificarRepetidos(texto){
 function push(valor){
     palabras.push(valor);
     palabrasAdicionales.push(valor);
-    localStorage.setItem("palabrasAdicionales.", palabrasAdicionales);
+    localStorage.setItem("palabrasAdicionales", palabrasAdicionales);
 }
 
 //verificar acentos

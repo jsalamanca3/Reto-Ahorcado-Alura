@@ -8,6 +8,15 @@ let cant_aciertos = 0; //cuantas letras acerté
 
 let inputAnhadidos = new Array; //Añadido ---
 
+//evita que se recarge la pagina al presionar enter
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('input[type=text]').forEach( node => node.addEventListener('keypress', e => {
+    if(e.keyCode == 13) {
+        e.preventDefault();
+    }
+    }))
+});
+
 /* click para iniciar juego */
 accion.addEventListener("click", start);
 
@@ -24,7 +33,7 @@ function start(event) {
     const cant_palabras = palabras.length;
     const valor_al_azar = obtener_random(0, cant_palabras);
 
-    palabrita = palabras[valor_al_azar];
+    palabrita = inputAnhadidos + palabras[valor_al_azar]; //añadido inputAnhadidos
     console.log(palabrita);
     const cant_letters = palabrita.length;
 
@@ -72,7 +81,7 @@ function click_letters(event) {
         id("result").innerHTML = "Perdiste, la palabra era " + palabrita;
         game_over();
     } else if (cant_aciertos == palabrita.length) {
-        id("result").innerHTML = "Enorabuena ¡has Ganado!";
+        id("result").innerHTML = "Enhorabuena ¡has Ganado!";
         game_over();
     }
 }
